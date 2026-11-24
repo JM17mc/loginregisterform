@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="auth-container">
+
+    <section class="auth-image">
+      <img src="images/ironman-login.png" alt="Iron Man">
+      <h1 class="brand-title">IRON<br>MAN</h1>
+    </section>
+
+    <section class="auth-card">
+      <h2 class="card-title">WELCOME BACK!</h2>
+
+      <form id="loginForm" novalidate>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email">
+          <small class="error-message" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <small class="error-message" id="passwordError"></small>
+        </div>
+
+        <div class="form-options">
+          <label class="remember">
+            <input type="checkbox" id="remember" name="remember">
+            Remember me
+          </label>
+          <a href="#" class="link">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn-primary">Login</button>
+
+        <p class="switch-text">
+          Don't have an account?
+          <a href="register.html" class="link">Create Account now</a>
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
